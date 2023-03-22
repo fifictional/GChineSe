@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style_grammar.css')}}">
+    <title>Grammar</title>
+</head>
+<body>
+    <div class="side">
+        <img src="{{url_for('static', filename='img/side_pic5.jpg')}}" alt="main_photo" style="width: 23%" style="height: 1000px"/>
+<!--        <img src="img/side_pic2.png" alt="main_photo" style="width: 20%" style="height: 100%"/>-->
+        <a class="GCSE" href="/">GCSE</a>
+        <div class="vocabulary">Grammar</div>
+        <a class="table" href="/grammar"><button>1 - The grammar list</button></a>
+        <a class="quiz" href="/grammar-flashcards"><button>2 - Grammar flashcards</button></a>
+    </div>
+
+    <div class="main">
+        <div class="square"><img src="{{url_for('static', filename='img/square3.png')}}" alt="background" style="width: 280%" "height=1000%"/></div>
+<!--        <div class="square"><img src="img/square2.png" alt="background" style="width: 250%" style="height=1000%"/></div>-->
+        <div class="topics">Grammar List</div>
+        <div class="main_info">In this section, there are 47 different grammar structures that are essential to know for the exam.
+            They are sorted out by the level of difficulty. </div>
+
+
+    </div>
+
+
+<!--    <div class="boxes">-->
+<!--        <ol>{%for structure in table_grammar%}-->
+<!--            <li>{{structure}}</li>-->
+<!--        {%endfor%}</ol>-->
+
+<!--    </div>-->
+
+    <div class="difficulty1">
+        <p>Level: 1</p>
+        <ol>{%for structure in table_grammar1%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+
+    <div class="difficulty2">
+        <p>Level: 2</p>
+        <ol>{%for structure in table_grammar2%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+
+    <div class="difficulty3">
+        <p>Level: 3</p>
+        <ol>{%for structure in table_grammar3%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+
+    <div class="difficulty4">
+        <p>Level: 4</p>
+        <ol>{%for structure in table_grammar4%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+
+    <div class="difficulty5">
+        <p>Level: 5</p>
+        <ol>{%for structure in table_grammar5%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+
+    <div class="difficulty6">
+        <p>Level: 6</p>
+        <ol>{%for structure in table_grammar6%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+
+    <div class="difficulty7">
+        <p>Level: 7</p>
+        <ol>{%for structure in table_grammar7%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+    <div class="difficulty8">
+        <p>Level: 8</p>
+        <ol>{%for structure in table_grammar8%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+    <div class="difficulty9">
+        <p>Level: 9</p>
+        <ol>{%for structure in table_grammar9%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+    <div class="difficulty10">
+        <p>Level: 10</p>
+        <ol>{%for structure in table_grammar10%}
+            <li>{{structure[0]}}</li>
+        {%endfor%}</ol>
+
+    </div>
+
+
+</body>
+</html>

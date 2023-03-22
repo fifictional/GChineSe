@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    background-color: #D9D9D9;
+    font-family: 'Poppins';
+}
+
+html {
+scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+/* Crafting for the head picture*/
+.header {
+  position: relative;
+  text-align: center;
+  color: #4B4F70;
+}
+
+.header img{
+    margin-left: -20px;
+    margin-top: -160px;
+    margin-right: -20px;
+}
+
+
+/* Crafting for main page text*/
+.top-left {
+  color: #4B4F70;
+  text-decoration: none;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 35px;
+}
+.about-the-project{
+    color: #A0A9C0;
+}
+.contact-me{
+    color: #A0A9C0;
+}
+.bottom-left{
+  position: absolute;
+  top: 470px;
+  left: 50px;
+  font-size: 25px;
+  color: #D9D9D9;
+}
+
+.start-learning{
+  text-decoration: none;
+  position: absolute;
+  top: 530px;
+  left: 50px;
+  font-size: 20px;
+  color: #4B4F70;
+  padding: 25px;
+  background-color: #EBEFF9;
+}
+
+.start-learning:hover{
+    color:  #4B4F70;
+    background-color: #CEC5C5 ;
+    transition: 0.3s;
+}
+
+.header_list{
+    position:absolute;
+    top: 25px;
+    left: 650px;
+    list-style: none;
+
+}
+
+.header_list li{
+  display: inline-block;
+  padding: 35px;
+  color: #787D8A;
+  font-size: 20px;
+}
+
+ul li a.start-learning-header{
+      text-decoration: none;
+      padding: 25px;
+      background-color: #EBEFF9;
+      color: #4B4F70;
+}
+
+ul li a.start-learning-header:hover{
+    color:  #4B4F70;
+    background-color: #CEC5C5 ;
+    transition: 0.3s;
+}
+
+
+/* Crafting the subtext*/
+
+.subtext{
+    color: #4B4F70;
+    font-size: 30px;
+    background-color: #C8C4C4;
+    padding: 30px;
+}
+
+.boxes li{
+    display: inline-block;
+}
+
+.box1 {
+  inline-size:500px;
+/*  overflow: hidden;*/
+  margin-left: 100px;
+}
+
+.box2 {
+  inline-size: 550px;
+/*  overflow: hidden;*/
+  margin-left: 100px;
+}
+
+
+/* Crafting the box for useful-vocabulary*/
+
+.useful-vocabulary{
+    margin-top: 200px;
+    color: #4B4F70;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.useful-vocabulary-boxes li{
+    display: inline-block;
+}
+
+.uv_box1{
+    inline-size: 450px;
+}
+
+.uv_box2{
+    inline-size: 500px;
+    margin-left: 200px;
+}
+
+ul li a.go-to-list{
+      padding: 20px;
+      background-color: #4B4F70 ;
+      color: #E8DFDF;
+      font-size: 20px;
+      position:relative;
+
+
+}
+
+
+ul li a.go-to-list:hover{
+    color:  #4B4F70;
+    background-color: #CEC5C5 ;
+    transition: 0.3s;
+}
+
+.go-to-list button{
+      background: none;
+	  color: inherit;
+	  border: none;
+	  padding: 0;
+	  font: inherit;
+	  cursor: pointer;
+	  outline: inherit;
+}
+
+
+/*ul li a.go-to-list::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #6176AE;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+}
+
+ul li a.go-to-list::after {
+    content: "";
+    display: block;
+    width: 500%;
+    height: 50%;
+    background: #6176AE;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+}
+
+
+ul li a.go-to-list:hover::before{
+    left: 0;
+}
+
+ul li a.go-to-list:hover::after{
+    top: 0;
+}*/
+
+
+
+
+/* Crafting the box for useful-grammar*/
+
+.useful-grammar{
+    margin-top: 200px;
+    color: #4B4F70;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.useful-grammar-boxes li{
+    display: inline-block;
+}
+
+.ug_box1{
+    inline-size: 450px;
+}
+
+.ug_box2{
+    inline-size: 500px;
+    margin-left: 200px;
+}
+
+ul li a.go-to-list2{
+      padding: 20px;
+      background-color:#4B4F70 ;
+      color: #E8DFDF;
+      font-size: 20px;
+}
+
+ul li a.go-to-list2:hover{
+    color:  #4B4F70;
+    background-color: #CEC5C5 ;
+    transition: 0.3s;
+}
+.go-to-list2 button{
+      background: none;
+	  color: inherit;
+	  border: none;
+	  padding: 0;
+	  font: inherit;
+	  cursor: pointer;
+	  outline: inherit;
+}
+/* Crafting the box for speaking*/
+
+.speaking{
+    margin-top: 200px;
+    color: #4B4F70;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.speaking-boxes li{
+    display: inline-block;
+}
+
+.sp_box1{
+    inline-size: 450px;
+}
+
+.sp_box2{
+    inline-size: 500px;
+    margin-left: 200px;
+}
+
+ul li a.go-to-info{
+      padding: 20px;
+      background-color:#4B4F70 ;
+      color: #E8DFDF;
+      font-size: 20px;
+}
+
+ul li a.go-to-info:hover{
+    color:  #4B4F70;
+    background-color: #CEC5C5 ;
+    transition: 0.3s;
+}
+
+.go-to-info button{
+      background: none;
+	  color: inherit;
+	  border: none;
+	  padding: 0;
+	  font: inherit;
+	  cursor: pointer;
+	  outline: inherit;
+}
+
+/* Crafting the box for writing*/
+
+.writing{
+    margin-top: 200px;
+    color: #4B4F70;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.writing-boxes li{
+    display: inline-block;
+}
+
+.wr_box1{
+    inline-size: 500px;
+}
+
+.wr_box2{
+    inline-size: 500px;
+    margin-left: 0px;
+}
+
+ul li a.practice{
+      padding: 20px;
+      background-color:#4B4F70 ;
+      color: #E8DFDF;
+      font-size: 20px;
+}
+
+ul li a.practice:hover{
+    color:  #4B4F70;
+    background-color: #CEC5C5 ;
+    transition: 0.3s;
+}
+
+.practice button{
+      background: none;
+	  color: inherit;
+	  border: none;
+	  padding: 0;
+	  font: inherit;
+	  cursor: pointer;
+	  outline: inherit;
+}
+
+/* Crafting for the footer*/
+.footer {
+  position: relative;
+  text-align: center;
+  color: #4B4F70;
+}
+
+.footer img{
+    margin-left: -50px;
+    margin-bottom: -100px;
+
+}
+
+
+.gcse {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-size: 35px;
+}
+
+.made-by{
+  position: absolute;
+  top: 50px;
+  left: 900px;
+  font-size: 15px;
+  color: #D9D9D9;
+}
+
+.contact{
+  position: absolute;
+  top: 90px;
+  left: 1150px;
+  font-size: 15px;
+  color: #4B4F70;
+  padding: 15px;
+  background-color: #EBEFF9;
+}

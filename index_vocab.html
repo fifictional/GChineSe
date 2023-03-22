@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style_vocab.css')}}">
+    <script src="script1.js"></script>
+    <title>Vocabulary</title>
+</head>
+<body>
+    <div class="side">
+        <img src="{{url_for('static', filename='img/side_pic6.jpeg')}}" alt="main_photo" style="width: 23%" style="height: 1000%"/>
+        <a class="GCSE" href="/">GCSE</a>
+        <div class="vocabulary">Vocabulary</div>
+        <a class="table" href="/vocabulary"><button>1 - The table of all vocabulary</button></a>
+        <a class="quiz" href="/vocabulary-quiz"><button>2 - Quiz yourself</button></a>
+    </div>
+
+    <a class="main">
+        <div class="square"><img src="{{url_for('static', filename='img/square.png')}}" alt="background" style="width: 200%" /></div>
+        <div class="topics">Topics</div>
+        <div class="main_info">The following vocabulary list provides the core generic vocabulary for the exam.
+On the Mandarin GCSE exams there are 12 topics that students need to master.</div>
+        <div class="list" style="visibility:{{ visibility2 }}">
+            <ol>
+                <a class="daily_life" href="/vocabulary-table-daily-life"><li>Daily life, food and drink</li></a>
+                <a class="dress_and_style" href="/vocabulary-table-dress-style"><li>Dress and style</li></a>
+                <a class="identity" href="/vocabulary-table-identity"><li>Identity and relationships</li></a>
+                <a class="cultural_life" href="/vocabulary-table-cultural-life"><li>Cultural life</li></a>
+                <a class="social_media" href="/vocabulary-table-social-media"><li>Using social media</li></a>
+                <a class="local_area" href="/vocabulary-table-local-area"><li>Local area, holiday and travel</li></a>
+                <a class="weather_phrases" href="/vocabulary-table-weather-phrases"><li>Weather phrases</li></a>
+                <a class="asking_for_directions" href="/vocabulary-table-asking-for-directions"><li>Asking for directions</li></a>
+                <a class="dealing_with_problems" href="/vocabulary-table-dealing-with-problems"><li>Dealing with problems</li></a>
+                <a class="school" href="/vocabulary-table-school"><li>School</li></a>
+                <a class="future_aspirations" href="/vocabulary-table-future-aspirations"><li>Future aspirations</li></a>
+                <a class="international_and_global" href="/vocabulary-table-international-and-global"><li>International and global issues</li></a>
+            </ol>
+        </div>
+        <div class="start_off" style="visibility:{{ visibility2 }}">To start off, however, have a look at the list of common verbs, nouns and adjectives.</div>
+
+
+        <div class="start_list" style="visibility:{{ visibility2 }}">
+            <ol><a class="common_verbs" href="/vocabulary-common-verbs"><li>Common verbs</li></a>
+            <a class="common_adjectives" href="/vocabulary-common-adjectives"><li>Common adjectives</li></a>
+            <a class="common_adverbs" href="/vocabulary-common-adverbs"><li>Common adverbs</li></a></ol>
+        </div>
+
+
+
+    <div class="the_table" style="visibility:{{ visibility }}">
+        <table>
+  <tbody>
+    <tr>
+        <td>ID</td>
+     {%for id in table1%}
+        <td>{{id[0]}}</td>
+    {%endfor%}
+    </tr>
+    <tr>
+        <td>Chinese</td>
+     {%for word in table2%}
+        <td>{{word[0]}}</td>
+    {%endfor%}
+    </tr>
+    <tr>
+        <td>English</td>
+     {%for character in table3%}
+        <td>{{character[0]}}</td>
+    {%endfor%}
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style_grammar_flashcards.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Grammar</title>
+</head>
+
+<body>
+    <div class="side">
+        <img src="{{url_for('static', filename='img/side_pic5.jpg')}}" alt="main_photo" style="width: 23%" style="height: 100%"/>
+<!--        <img src="img/side_pic2.png" alt="main_photo" style="width: 20%" style="height: 100%"/>-->
+        <a class="GCSE" href="/">GCSE</a>
+        <div class="vocabulary">Grammar</div>
+        <a class="table" href="/grammar"><button>1 - The grammar list</button></a>
+        <a class="quiz" href="/grammar-flashcards"><button>2 - Grammar flashcards</button></a>
+    </div>
+
+    <div class="main">
+        <div class="square"><img src="{{url_for('static', filename='img/square3.png')}}" alt="background" style="width: 280%"/></div>
+<!--        <div class="square"><img src="img/square2.png" alt="background" style="width: 250%" style="height=1000%"/></div>-->
+        <div class="topics">The grammar flashcards</div>
+        <div class="main_info">This is a convenient way for you to check the knowledge of all the grammar structures.
+            Simply point your mouse at a flashcards as soon as you have an answer to check yourself.</div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="swiper-container">
+  <div class="swiper-wrapper">
+    {% for meaning, structure in cards %}
+      <div class="swiper-slide">
+        <div class="front">{{ meaning[0] }}</div>
+        <div class="back">{{ structure[0] }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+
+</div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <div style="margin-top:500px"></div>
+
+</body>
+</html>

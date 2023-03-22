@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style_writing.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Grammar</title>
+</head>
+<body>
+    <div class="side">
+        <img src="{{url_for('static', filename='img/side_pic3.jpeg')}}" alt="main_photo" style="width: 20%" style="height: 300%"/>
+        <a class="GCSE" href="/">GCSE</a>
+        <div class="vocabulary">Writing</div>
+
+    </div>
+
+    <div class="main">
+        <div class="square"><img src="{{url_for('static', filename='img/square4.png')}}" alt="background" style="width: 97%"/></div>
+        <div class="topics">The writing tasks</div>
+        <div class="main_info">The best way to learn how to write - is to write. Ideally,
+            you should have written at least one essay to each topic when it comes to the exam. Here I have provided the tasks,
+        the tips and the sample answer. Make sure to have a go yourself and then learn something form the sample essays.</div>
+
+
+    </div>
+
+
+
+
+
+
+<div id="mylist" class="list">
+  {% for topic, task, tips, answer in data %}
+    <ul>
+      <li>
+        <a>
+          {{ topic[0] }}
+          <span class="arrow-down"></span>
+        </a>
+        <ul class="task">
+          <li>{{ task[0] }}</li>
+          <li>The tip for you: {{ tips[0] }}</li>
+          <li>
+            <a class="reveal-answer">Reveal the sample answer</a>
+            <ul class="answer">
+              <li>{{ answer[0] }}</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  {% endfor %}
+</div>
+
+
+<script>// get all the topic links
+// get all the topic links
+var topicLinks = document.querySelectorAll('#mylist a');
+
+// loop through each topic link
+topicLinks.forEach(function(link) {
+  // add an event listener for when the link is clicked
+  link.addEventListener('click', function(e) {
+    // prevent the link from following its href
+    e.preventDefault();
+    // get the parent list item
+    var listItem = link.parentElement;
+    // get the task list for this topic
+    var taskList = listItem.querySelector('.task');
+    // toggle the active class on the list item
+    listItem.classList.toggle('active');
+    // slide down the task list if it's hidden, or slide it up if it's visible
+    if (taskList.style.display === 'none') {
+      taskList.style.display = 'block';
+      var totalHeight = taskList.scrollHeight + parseInt(window.getComputedStyle(taskList).getPropertyValue('margin-bottom')) + parseInt(window.getComputedStyle(taskList).getPropertyValue('margin-top'));
+      listItem.style.height = (listItem.offsetHeight + totalHeight) + 'px';
+    } else {
+      taskList.style.display = 'none';
+      listItem.style.height = null;
+    }
+  });
+});
+
+</script>
+<script>
+  const revealAnswerLinks = document.querySelectorAll('.reveal-answer');
+  revealAnswerLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const answerSection = link.nextElementSibling;
+      const answerContent = answerSection.querySelector('li');
+      answerSection.style.display = answerSection.style.display === 'block' ? 'none' : 'block';
+      if (answerSection.clientHeight > 150) {
+        answerSection.style.overflowY = 'scroll';
+        answerSection.style.maxHeight = '150px';
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html
