@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+    <title>GChinSE</title>
+</head>
+
+<body>
+    <div class="header">
+      <img src="{{url_for('static', filename='img/main_photo4.png')}}" alt="main_photo" style="width: 110%"/>
+      <a href="/" class="top-left">GChineSE</a>
+        <div class="bottom-left">Prepare for your exams effectively.</div>
+        <a href="#section_start_learning" class="start-learning">Start learning</a>
+        <ul class="header_list">
+            <li>
+                <a href="/about-the-project" class="about-the-project">  About the project</a>
+            </li>
+            <li>
+                <a class="contact-me" href=mailto:<sflenova@thorpeunderwood.org>Contact me</a>
+            </li>
+            <li>
+                <a href="#section_start_learning" class="start-learning-header"> Start learning</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="subtext">
+        <ul class="boxes">
+            <li>
+                <div class="box1">The exams preparation period can be very
+            tricky especially for those, who study a foreign language.</div>
+            </li>
+            <li>
+                <div class="box2">Luckily for you, we have created a convenient
+            tool to learn new things and practise what you already know.</div>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+
+    <div id="section_start_learning" class="useful-vocabulary">
+        <ul class="useful-vocabulary-boxes">
+            <li>
+                <div class="uv_box1">
+                    <h3>~ Useful vocabulary </h3>
+                    <p>Did you know there is a list of vocabulary you need to know for GCSE?
+                        Here you can access and practice it freely.</p>
+                    <a class="go-to-list" href="/vocabulary">
+                        <button>Go to vocabulary</button>
+                    </a>
+
+                </div>
+            </li>
+            <li>
+                <div class="uv_box2">
+                    <img src="{{url_for('static', filename='img/painting1.png')}}" alt="painting1" style="width=100%;" width="400px" height="400px">"
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <div class="useful-grammar">
+        <ul class="useful-grammar-boxes">
+            <li>
+                <div class="ug_box1">
+                    <img src="{{url_for('static', filename='img/painting2.png')}}" alt="painting2" style="width=100%;" width="400px" height="400px">
+                </div>
+            </li>
+            <li>
+                <div class="ug_box2">
+                    <h3>~ Useful grammar </h3>
+                    <p>Grammar is essential to construct sentences. Click to see the whole list and practice.
+                    </p>
+                    <a class="go-to-list2" href="/grammar">
+                        <button>Go to grammar</button>
+                    </a>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+
+
+
+<!--    <div class="speaking">-->
+<!--        <ul class="speaking-boxes">-->
+<!--            <li>-->
+<!--                <div class="sp_box1">-->
+<!--                    <h3>~ Practice speaking </h3>-->
+<!--                    <p>The speaking part of the exams is considered the most stressful one on the exam. You will find all the information and tips here.</p>-->
+<!--                    <a class="go-to-info">-->
+<!--                        <button>Go to list</button>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <div class="sp_box2">-->
+<!--                    <img src="{{url_for('static', filename='img/painting3.png')}}" alt="painting3" style="width=100%;" width="400px" height="400px">-->
+<!--                </div>-->
+<!--            </li>-->
+
+<!--        </ul>-->
+<!--    </div>-->
+
+        <div class="writing">
+        <ul class="writing-boxes">
+            <li>
+                <div class="wr_box2">
+                    <h3>~ Practice writing </h3>
+                    <p> Writing part of the exam may be tricky, but you surely can master it!
+                    </p>
+                    <a class="practice" href="/writing">
+                        <button>Go to writing</button>
+                    </a>
+            </li>
+            <li>
+
+                    <div class="wr_box1">
+                    <img src="{{url_for('static', filename='img/painting4.png')}}" alt="painting2" style="width=100%;" width="400px" height="400px">
+                </div>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <footer class="footer">
+      <img src="{{url_for('static', filename='img/footer.png')}}" alt="footer_photo" style="width: 105%" width="1480px" height="200px">
+      <div class="gcse">GChineSE</div>
+        <div class="made-by">Project made by Sofiya Flenova as an EPQ artefact.</div>
+        <div class="contact">Contact me</div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>
